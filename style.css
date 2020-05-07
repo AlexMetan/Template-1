@@ -1,0 +1,298 @@
+/*
+Theme Name: Template 1
+Author: Madbunny
+*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+a:hover{text-decoration: none;}
+*:focus,button:focus{outline: none!important;}
+*{color: #233148;font-family: 'Work Sans', sans-serif;}
+p{font-size: 14px;margin-bottom: 0;}
+h2{font-size: 30px; font-weight: 700;}
+h1,h4{margin-bottom: 0;}
+section{position: relative;}
+/* home section /banner */
+#home{
+    height: 95vh;
+    position: relative;
+    z-index: 0;
+    min-height: 500px;
+}
+.banner-white-element{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+.banner-white-element img,.banner-phone img{
+    width: 100%;
+}
+#home h1{color: #fff;font-weight: 700;letter-spacing: 4px;}
+#home p{color: #fff;}
+.banner-phone{
+    position: absolute;
+    bottom: -5%;
+    width: 25vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+.home-content{
+    padding-top: 13vh;
+}
+.home-content p{padding: 25px 0;}
+/* home btns */
+.btn-border{
+    display: inline-block;
+}
+.btn-border a{
+    font-weight: 700;
+    border: 1px solid #fff;
+    background: none;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    min-width: 180px;
+    margin: 5px;
+    color: #fff;
+    transition: 0.5s;
+}
+.btn-border a:hover{transition: 0.5s;background: #fff;color: #233148;}
+
+/* section about  */
+#about{padding: 100px 0;background: #fafafc;}
+.smartphone-img{width: 100%;}
+.icon-content{
+    width: 100%;
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 7px 18px -8px rgb(218, 218, 218);
+}
+.icon-content img{
+    height: 45px;
+    margin: auto;
+    display: block;
+}
+.icon-content h5{font-size:14px;font-weight: 700;margin:25px 0;}
+.icon2,.icon4{margin-top: 80px;}
+
+/*section advantages */
+#advantages{padding: 100px 0;background-color: #fff;}
+#advantages h2{text-align: right;margin-top: 15px;}
+#advantages .left-content{text-align: right;margin-top: 50px;}
+.advantages-content{
+    cursor: pointer;
+    padding: 20px;
+    box-shadow: 0px 7px 18px -8px rgb(218, 218, 218);
+    margin: 10px 0;
+    transition: 0.5s;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.advantages-content h4{font-size: 15px; font-weight: 700;}
+.advantages-content img{height: 25px;display: block;margin: auto;}
+.hidden-text{display: none;margin-top: 10px;}
+.content-opened{
+    transition: 0.5s;
+    background-color: #33d2fd;
+    
+}
+.content-opened *{color: #fff!important;}
+.content-opened img{filter: brightness(10);}
+.blue-btn{text-align: right;}
+.blue-btn a{
+    background-color: #33d2fd;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 50px;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+ 
+/* requirements */
+#requirements{
+    padding: 70px 0;
+    background:#fafafc ;
+}
+#requirements img{width: 100%;}
+
+#requirements ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin: 40px 0;
+}  
+#requirements li {
+    padding-left: 1em;
+    text-indent: -1em;
+    position: relative;
+    margin: 10px 0;
+    font-weight: 700;
+}
+  
+#requirements li:before {
+    content: url(img/dot.png);
+    padding-right: 5px;
+    top: 5px;
+    position: relative;
+}
+
+/* app  section*/
+
+#app{padding: 110px 0;}
+#app img{width: 100%;}
+#app p{color: #fff;margin: 40px 0 60px;}
+
+.special-btn{
+    bottom: -3%;
+    margin: auto;
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    z-index: 2;
+}
+.special-btn a{
+    background: linear-gradient(180deg, rgba(254,117,112,1) 0%, rgba(248,88,147,1) 100%);
+    color: #fff;
+    padding: 20px 50px;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+/* repeated */
+.bg{
+    width: 100%;
+    background-position: center!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+}
+.align-center-flex{align-items: center;display: flex;}
+.align-center-flex-column{flex-direction: column;display: flex;justify-content: center;}
+ 
+/*Subscribe  section*/
+#subscribe{padding: 90px 0;}
+#subscribe input{
+    width: 100%;
+    border: none;
+    background-color: #f6f7fb;
+    padding: 10px 20px;
+}
+#subscribe button{
+    display: block;
+    border: none;
+    background: #33d2fd;
+    color: #233148;
+    height: 100%;
+    font-weight: 700;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    cursor: pointer;
+}
+#subscribe form{
+    margin-top: 70px;
+}
+#message{
+    margin-top: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* menu */
+nav{
+    position: fixed!important;
+    z-index: 10000;
+    width: 100%;
+    background-color: none!important;
+    transition: 0.5s;
+}
+nav a{
+    transition: 0.5s;
+    color: #fff;
+}
+nav a:hover{
+    transition: 0.5s;
+    color: #fff;
+}
+.white-bg{
+    transition: 0.5s;
+    background: #fff;
+}
+.white-bg a{
+    transition: 0.5s;
+    color: #333;
+}
+.white-bg a:hover{
+    transition: 0.5s;
+    color: #33d2fd;
+}
+.white-bg .navbar-brand{
+    transition: 0.5s;
+    filter: invert(1);
+}
+.navbar-brand{
+    transition: 0.5s;
+}
+#navbarNav{justify-content: flex-end;}
+#menu-primary{
+    display: inline-flex;
+    list-style: none;
+}
+#menu-primary li{padding: 10px;}
+
+
+
+/* footer */
+footer{
+    padding: 15px;
+    background-color: #233148;
+}
+footer h6{
+    color: #fff;
+    font-size: 14px;
+}
+/* rwd*/
+@media only screen and (max-width: 1040px) {
+    .special-btn {
+        left: 15%;
+        right: 15%;
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .banner-phone{
+        bottom: -28%;
+    }
+    form button{
+        width: 100%!important;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    
+    .icon1,.icon2,.icon3,.icon4{margin: 20px 0;}
+    
+    #app img {
+        width: 20%;
+        margin: auto;
+        display: block;
+        margin-bottom: 40px;
+    }
+    #subscribe input {
+        margin-bottom: 20px;
+    }
+    .platform-logo{
+        width: 60%!important;
+    }
+}
+@media only screen and (max-width: 576px) {
+    /* section about  */
+    .col-hide{display: none;}
+
+}
